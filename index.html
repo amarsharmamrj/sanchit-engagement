@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanchit & Madhu | Engagement</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&family=Dancing+Script:wght@700&family=Parisienne&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Hero Section -->
+    <section class="hero tilt-element">
+        <div class="petals" id="petals"></div>
+        <div class="hero-content">
+            <h1>Sanchit & Madhu</h1>
+            <h2>We're Getting Engaged</h2>
+            <div class="date">April 24, 2025</div>
+            <a href="#story" class="btn">Our Love Story</a>
+        </div>
+        <div class="scroll-down" onclick="document.getElementById('story').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- welcome Section -->
+    <section class="welcome tilt-element">
+        <img src="ganesh_ji.png" alt="">
+        <img src="ganeshay_namah.png" alt="">
+    </section>
+
+    <!-- coutdown Section -->
+    <section class="countdownBox tilt-element">
+        <h1 class="section-title">Join us in</h1>
+        <div class="countdown" id="countdown">
+            <div class="countdown-item">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story tilt-element" id="story">
+        <div class="container">
+            <h2 class="section-title">Our Love Story</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>Our story began at a mutual friend's wedding in Tuscany. Michael was the best man, and Sophia was
+                        the maid of honor. We locked eyes during the reception while dancing to "Can't Help Falling in
+                        Love."</p>
+                    <p>After that magical night, we spent weekends exploring Italian vineyards, cooking pasta together,
+                        and falling more in love each day. Michael proposed during a hot air balloon ride over the
+                        Tuscan countryside at sunset.</p>
+                    <p>Now we're excited to begin our forever together, surrounded by the people we love most in the
+                        world. We can't wait to celebrate with you!</p>
+                    <a href="#details" class="btn">Engagement Details</a>
+                </div>
+                <div class="story-image">
+                    <img src="bg_m_8.webp" alt="Wedding rings">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Details Section -->
+    <section class="details tilt-element" id="details">
+        <div class="container">
+            <h2 class="section-title">The Celebration</h2>
+            <p class="invite">With joy in our hearts, we invite you to witness and bless our union as we tie the knot in holy matrimony.</p>
+            <div class="details-container">
+                <div class="detail-card">
+                    <i class="far fa-calendar-alt"></i>
+                    <h3>When</h3>
+                    <p>Thursday, April 24, 2025</p>
+                    <p>7:00 PM - Ring Ceremony</p>
+                    <p>Dancing until midnight</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Where</h3>
+                    <p>Ankur Palace</p>
+                    <p>Anand Nagar</p>
+                    <p>Maharajganj, U.P.</p>
+                </div>
+            </div>
+
+            <!-- Google Map Section -->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.7372353458777!2d83.27330477469172!3d27.101579976535156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996b5a4d55dc745%3A0x118f72927475d25e!2sAnkur%20Palace!5e0!3m2!1sen!2sin!4v1743401004133!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="tilt-element">
+        <div class="container footer-content">
+            <p class="footer-text">Sanchit & Madhu</p>
+            <p class="footer-text">April 24, 2025 • Anand Nagar, Maharajganj, U.P.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"> </script>
+</body>
+
+</html>
